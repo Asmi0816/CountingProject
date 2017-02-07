@@ -74,8 +74,7 @@ public class CountPanel extends JPanel
 		{
 			 public void actionPerformed(ActionEvent click)
 			 {
-				 userArea.setText(baseController.iterativeFibinacci(inputField.getText()));
-				 System.out.println("Now the rucurcive time");
+				
 				 userArea.setText(baseController.transferFibinacci(inputField.getText()));
 			 }
 		});
