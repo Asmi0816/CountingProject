@@ -61,6 +61,20 @@ public class CountPanel extends JPanel
 	
 	public void setupListeners()
 	{
+		factButton.addActionListener(new ActionListener()
+		{
+			 public void actionPerformed(ActionEvent click)
+			 {
+				 userArea.setText(baseController.transferFactorial(inputField.getText()));
+			 }
+		});
 		
+		fibButton.addActionListener(new ActionListener()
+		{
+			 public void actionPerformed(ActionEvent click)
+			 {
+				
+			 }
+		});
 	}
 }
