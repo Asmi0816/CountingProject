@@ -56,7 +56,7 @@ public class CountController
 	
 	public String transferFibinacci(String input)
 	{
-		String fibinacci = "";
+		String fibinacci = "The recursive way is." + input + " is ";
 		
 		mathTimer.resetTimer();
 		mathTimer.startTimer();
@@ -67,7 +67,7 @@ public class CountController
 		}
 		
 		mathTimer.stopTimer();
-		fibinacci += "\n" + mathTimer;
+		fibinacci += "\n" + mathTimer.toString();
 		
 		
 		fibinacci = "\n The irative time";
@@ -81,7 +81,7 @@ public class CountController
 		}
 		
 		mathTimer.stopTimer();
-		fibinacci += "\n" + mathTimer;
+		fibinacci += "\n" + mathTimer.toString();
 		return fibinacci;
 	}
 	
